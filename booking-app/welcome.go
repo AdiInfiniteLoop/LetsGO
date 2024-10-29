@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	conferenceName := "Go Conference"
 	const conferenceTickets int32 = 50
-	var remTickets int32 = 50
+	remTickets := 50
 
 	fmt.Printf("Welcome to the %v booking application\n", conferenceName)
 	fmt.Printf("We have total of %v tickets and currently available are %v", conferenceTickets, remTickets)
@@ -22,7 +22,7 @@ func main() {
 	fmt.Scanf("%s", &userName)
 	fmt.Scan(&emailID)
 	fmt.Scan(&ticketBought)
-	remTickets -= ticketBought
+	remTickets = remTickets - ticketBought
 	fmt.Println("Hello", userName)          // by default there is space after "Hello"
 	fmt.Println("Your emailId is", emailID) // by default there is space after "Hello"
 	fmt.Println("Successfully bought", ticketBought, "tickets")
