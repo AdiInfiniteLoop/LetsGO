@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	conferenceName := "Go Conference"
@@ -30,7 +33,7 @@ func main() {
 	remTickets = remTickets - ticketBought
 	fmt.Println("Hello", userName)          // by default there is space after "Hello"
 	fmt.Println("Your emailId is", emailID) // by default there is space after "Hello"
-	fmt.Println("Successfully bought", ticketBought, "tickets")
+	fmt.Println("Successfull bought", ticketBought, "tickets")
 	// bookings[0] = userName
 	bookings = append(bookings, userName)
 
@@ -47,4 +50,9 @@ func main() {
 	// slice is an abstraction of array
 	// slices are better options
 	bookings = append(bookings, userName)
+	for _, booking := range bookings {
+		namesIfTwo := strings.Fields(booking) // Fields to split string with 'white space' | returns a splice
+		firstName := namesIfTwo[0]
+		fmt.Printf("The first Name is: %v", firstName)
+	}
 }
