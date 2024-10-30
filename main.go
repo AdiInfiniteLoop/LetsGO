@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 	fmt.Println("Welcome users to our Booking App")
+	// := is called Short Variable Declaration(SVD). But I call it gosign
 	string1 := "Variable 1"
 	fmt.Println("first part of the string", string1, "Second part of the string")
 	const constantValue = 100
@@ -19,4 +20,9 @@ func main() {
 	a := 23; cannot explicitly define variables data type
 	Variables declared without a corresponding initialization are zero-valued. For example, the zero value for an int is 0.
 	*/
-}
+
+	// Syntax for slices in go
+	slice := make([]string, 0, 40) // datatype, fill with 0, capacity
+	//Since := both declares and intializes value
+	arr2 := []string{}               // empty slice
+	arr3 := []string{"SliceInitial Val1", "SliceInitial Val2"}
