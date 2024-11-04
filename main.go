@@ -43,7 +43,7 @@ func main() {
 		fmt.Print(index)
 	}
 
-	// infinite loop
+	// infinite loop causes unreachable code as it takes 100% CPU
 	// for {
 	// any operation
 	// }
