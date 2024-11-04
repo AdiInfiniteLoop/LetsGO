@@ -47,7 +47,24 @@ func main() {
 	// for {
 	// any operation
 	// }
-	for _, num := range 100 {
-		fmt.Printf(num)
+	// 1.Normal Loop
+	for i := 1; i <= 11; i++ {
+		fmt.Println(i)
+	}
+	// 2. While Loop
+	x := 1
+	for x <= 10 {
+		fmt.Println(x)
+		x++
+	}
+	// 3.For - each loop
+	for _, ind := range slice {
+		fmt.Println(ind)
+	}
+
+	for n := range 10 {
+		if n%2 == 0 {
+			fmt.Println(n)
+		}
 	}
 }
