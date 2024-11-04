@@ -50,4 +50,3 @@ func main() {
 	for _, num := range 100 {
 		fmt.Printf(num)
 	}
-}
