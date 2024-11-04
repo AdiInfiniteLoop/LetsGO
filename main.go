@@ -42,4 +42,12 @@ func main() {
 	for index := range 10 {
 		fmt.Print(index)
 	}
+
+	// infinite loop
+	// for {
+	// any operation
+	// }
+	for _, num := range 100 {
+		fmt.Printf(num)
+	}
 }
