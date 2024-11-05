@@ -47,6 +47,16 @@ func main() {
 	// for {
 	// any operation
 	// }
-	for _, num := range 100 {
-		fmt.Printf(num)
+
+	// 1.normal loop
+	for i := 10; i < 20; i++ {
+		fmt.Printf(" %v", i)
 	}
+
+	// 2.while
+	i := 12
+	for i <= 22 {
+		fmt.Printf("%v", i)
+		i++
+	}
+}
