@@ -48,11 +48,10 @@ func main() {
 	// nums := append(nums[:1]);//to delete first element
 	// nums := append(nums[3:])
 
-	newarr := make([]int, 4)
+	newarr := make([]int, 3)
 	newarr[0] = 10
 	newarr[1] = 20
 	newarr[2] = 30
-	newarr[3] = 40
 	// newarr[4] = 50; this line causes error but
 	newarr = append(newarr, 50)
 	newarr = append(newarr, 60)
