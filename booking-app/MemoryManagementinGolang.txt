@@ -1,0 +1,18 @@
+Go automatically manages memory 
+Two keywords:
+    1.new()
+    2.make()
+new()
+memory allocated but not initialized
+you will get a memory address
+zeroed storage (cannot put any data initially)
+
+make()
+memory allocated and initialized
+you will get a memory address
+non-zeroed storage 
+
+
+Garbage collection automatically happens
+
+GOGC=100(default) sets the initial garbage collection target percentage
