@@ -29,7 +29,27 @@ func makeSound(s speaks) {
 }
 
 func main() {
+  var x speaks;
+
+  x = human{}
+
+  //Type assertions in Golang
+  if _ , ok := x.(human) ; ok{
+    fmt.Printf("A Human is now using the interface for speaking\n")
+  } else {
+    fmt.Printf("Something else I guess\n")
+  }
+
+  //Let's use Type Switches
   
+  switch x.(type) {
+  case animal:
+    fmt.Printf("An animal is used\n")
+  case human:
+    fmt.Printf("A human is used\n")
+  default:
+    fmt.Printf("Default case runs\n")
+  }
   ani := animal {
     name: "Cat",
     age: 12,
